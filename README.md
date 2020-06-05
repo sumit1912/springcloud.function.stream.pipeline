@@ -10,5 +10,5 @@ sink-app accepts the Flux of String and logs it.
 
 These applications are designed to run on SCDF with RabbitMQ message broker.
 
-The source-app can be triggered by calling HTTP GET at the PORT it is running. For e.g.: http://localhost:<source-app-PORT>
+The source-app can be triggered by calling HTTP GET at the PORT it is running. For e.g.: http://localhost:source-app-PORT
  
