@@ -1,6 +1,7 @@
 //root project name
 rootProject.name = 'springcloud.function.stream.pipeline'
 //include the sub projects
-include 'source-app',
+include 'pipeline-core',
+        'source-app',
         'processor-app',
         'sink-app'
