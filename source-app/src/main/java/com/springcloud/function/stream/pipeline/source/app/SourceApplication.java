@@ -4,7 +4,7 @@ import java.util.function.Supplier;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.function.context.PollableBean;
+import org.springframework.context.annotation.Bean;
 
 import reactor.core.publisher.Flux;
 
@@ -15,7 +15,7 @@ public class SourceApplication {
         SpringApplication.run(SourceApplication.class, args);
     }
 
-    @PollableBean
+    @Bean
     public Supplier<Flux<String>> stringSupplier() {
         return () -> {
             String v1 = String.valueOf("abc");
